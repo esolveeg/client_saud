@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "kufi";
+    src: local("kufi"),
+         url(~assets/fonts/Kufi-Regular.ttf) format("truetype");
+}
+
+
+
+
+.rtl{
+    direction: rtl;
+    &.v-application {
+        font-family: "kufi",sans-serif !important;
+    }
+   
+    & label{
+        right: 0 !important;
+        left:auto !important;
+
+    }
+    .newsletter .v-text-field--rounded > .v-input__control > .v-input__slot {
+        padding: 0 0 0 24px !important;
+    }
+
+    .v-application--is-ltr .v-text-field .v-label {
+        transform-origin: top right !important;
+    }
+    & .mdi-arrow-right , & .mdi-arrow-left{
+        transform: rotate(180deg) !important;
+    }
+
+    & .btns > div:last-child button i {
+        margin-right: 10px;
+    }
+    & .v-btn {
+       letter-spacing: 0 !important;
+    }
+    &.v-application .title{
+        font-family: "kufi",sans-serif !important;
+    }
+
+    & .links ul li a::after{
+        right: 0;
+    }
+    
+    & .v-application--is-ltr .v-list-item__icon:first-child {
+        margin-left: 32px !important;
+        margin-right: 0 !important;
+    }
+
+    & .product .img{
+        margin-right: 0 !important;
+        margin-left: 20px;
+    }
+    & .b-right{
+        border-left: 1px solid var(--border-color);
+        border-right: none !important;
+    }
+    & .top .right li i{
+        margin-right: 0 !important;
+        margin-left: 10px;
+    }
+
+   
+}

@@ -1,0 +1,42 @@
+.p-b{
+    padding-bottom: 200px;
+}
+.totals{
+    position: fixed;
+    bottom: 56px;
+    left: 0;
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.btns{
+    & .button{
+        display: block !important;
+        widows: 100%;
+    }
+    & > div{
+        &:first-child{
+            & button{
+                margin-right: 20px;
+                color:var(--primary-color);
+                width: 100%;
+                border:1px solid var(--primary-color);
+                & i{
+                    margin-right: 10px;
+                }
+            }
+        }
+        &:last-child{
+            & button{
+                background-color:var(--primary-color);
+                color:#fff;
+                width: 100%;
+                & i{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.pr-partial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.pr-partial:hover .img {
+  margin-right: 20px;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.07);
+  border: 1px solid transparent;
+}
+
+.pr-partial .img {
+  border: 1px solid var(--border-color-lighter);
+  -webkit-transition: var(--primary-transition);
+  transition: var(--primary-transition);
+  position: relative;
+  cursor: pointer;
+}
+
+.pr-partial .img .actions {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.pr-partial .meta {
+  padding: 10px;
+  text-align: left;
+}
+
+.pr-partial .meta > * {
+  text-align: left;
+}
+
+.pr-partial .actions {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pr-partial .actions > * {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+/*# sourceMappingURL=wishlist-product.css.map */

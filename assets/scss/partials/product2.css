@@ -1,0 +1,41 @@
+.pr-partial {
+  display: block;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.pr-partial:hover .img {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.07);
+  max-width: 100%;
+  margin-top: 30px;
+  border: 1px solid transparent;
+}
+
+.pr-partial .img {
+  border: 1px solid var(--border-color-lighter);
+  transition: var(--primary-transition);
+  position: relative;
+  cursor: pointer;
+}
+
+.pr-partial .img .actions {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(50%);
+}
+
+.pr-partial .meta {
+  padding: 40px 10px 0;
+}
+
+.pr-partial .actions .active {
+  background-color: var(--danger) !important;
+}
+
+.pr-partial .actions .active i {
+  color: #fff;
+}

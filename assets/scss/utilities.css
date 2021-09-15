@@ -1,0 +1,139 @@
+body{
+    overflow: hidden;
+}
+
+.p-0{
+    padding:0 !important;
+}
+.items-center{
+    align-items: center;
+}
+.mr-2{
+    margin-right: 10px;    
+}
+.mt-4{
+    margin-top: 20px;
+}
+.space-between{
+    justify-content: space-between;
+}
+.underline{
+    text-decoration: underline;
+}
+
+.px-4{
+    padding: 20px 0;
+}
+
+.v-main{
+    padding-bottom: 85px   !important;
+}
+.font-gray{
+    color:var(--font-gray) !important
+}
+
+.max-w-80{
+    max-width: 80%;
+}
+
+.f-light{
+    color: var(--font-lighter) !important;
+}
+.p-4{
+    padding: 20px !important;
+}
+.product-title{
+    color: var(--font);
+    font-size: 18px !important;
+    font-weight: 500;
+}
+.text-primary{
+    color: var(--primary-color);
+}
+.border{
+    border:1px solid var(--border-color)
+}
+.mb-2{
+    margin-bottom: 10px;
+}
+.larger{
+    font-size: 28px !important;
+    font-weight: 600;
+}
+.danger{
+    color: #dc6a6a !important;
+}
+.product-subtitle{
+    color: var(--font-lighter);
+    font-size: 14px !important;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.h-30v{
+    height: 30vh;
+}
+
+.border-r{
+    border-right: 1px solid var(--border-color);
+    
+}
+@media (max-width: 768px) {
+    .sm-hidden {
+      display: none !important;
+    }
+  }
+  
+  .bg-gray {
+      background-color: var(--bg-gray) !important;
+  }
+
+.text-medium{
+  font-size: 14px;
+}
+
+.text-small{
+  font-size: 12px;
+}
+.text-medium{
+    font-size: 14px;
+  }
+.justify-between{
+    justify-content: space-between;
+}
+.color-lable{
+    width: 15px;
+    height: 15px;
+    outline: 1px solid var(--primary);
+    border-radius: 5px;
+    display: inline-block;
+
+}
+.text-black{
+    color: #000;
+}
+
+.border-b {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+    display: block;
+    margin-top: 10px;
+
+}
+
+
+.pointer{
+    cursor: pointer !important;
+}
+.primary-text{
+    color: var(--primary-color);
+}
+.bg-black{
+    background-color: #000;
+}

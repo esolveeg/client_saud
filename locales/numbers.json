@@ -1,0 +1,27 @@
+{
+    "en" :{
+        "currency" : {
+            "style": "currency",
+            "currency": "EGP"
+        },
+        "showing" : {
+            "style": "showing",
+            "products": "Products"
+
+        }
+
+    },
+    "ar" :{
+        "currency" : {
+            "style": "currency",
+            "currency": "EGP",
+            "currencyDisplay": "symbol"
+        },
+        "showing" : {
+            "style": "showing",
+            "products": "Products"
+
+        }
+
+    }
+}

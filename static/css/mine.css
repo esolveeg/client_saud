@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "century";
+    src: local("century"),
+         url(./fonts/Century-Gothic.ttf) format("truetype");
+}
+body {
+    font-family: "century"!important;
+}
+
+.logo-img{
+    max-width: 200px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logos div a img{
+    max-width: 200px;
+}

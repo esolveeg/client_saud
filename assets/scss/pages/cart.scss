@@ -1,0 +1,30 @@
+.btns{
+    @media(min-width: 768px){
+        flex : 0 auto;
+    }
+    & .button{
+        display: block !important;
+        width: 100%;
+    }
+    & > div{
+        &:first-child{
+            & button{
+                width: 100%;
+                border:1px solid var(--primary-color);
+                & i{
+                    margin-right: 10px;
+                }
+            }
+        }
+        &:last-child{
+            & button{
+                background-color:var(--primary-color);
+                color:#fff;
+                width: 100%;
+                & i{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

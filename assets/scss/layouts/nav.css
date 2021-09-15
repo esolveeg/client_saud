@@ -1,0 +1,111 @@
+.top {
+  background-color: #000;
+}
+
+.top .container {
+  padding: 0 12px !important;
+}
+
+.top .b-right {
+  padding: 15px 30px !important;
+  border-right: 1px solid var(--border-color);
+  transition: var(--primary-transition);
+}
+
+.top .b-right:hover {
+  background-color: #e4e4e4;
+}
+
+.top .b-right button {
+  width: 100%;
+  height: 100%;
+}
+
+.top .right li {
+  padding: 10px;
+  list-style: none;
+}
+
+.top .right li i {
+  margin-right: 10px;
+}
+
+.top .right .socials li, .top .right .socials li i {
+  transition: var(--primary-transition);
+}
+
+.top .right .socials li:hover, .top .right .socials li i:hover {
+  color: var(--primary-color);
+}
+
+.top .left {
+  padding-left: 0;
+}
+
+.top .left li, .top .left li i {
+  transition: var(--primary-transition);
+}
+
+.top .left:hover li {
+  color: var(--primary-color);
+}
+
+.top .left:hover li i {
+  color: var(--primary-color);
+}
+
+.top .social {
+  align-items: center;
+}
+
+.top .social li {
+  cursor: pointer;
+}
+
+.bottom {
+  background-color: #111;
+  transition: var(--primary-transition);
+  box-shadow: 10px 2px 10px #000;
+}
+
+.bottom.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.07);
+  z-index: 10;
+  box-shadow: 10px 2px 10px #000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.links ul li {
+  padding: 0 20px;
+}
+
+.links ul li a {
+  transition: var(--primary-transition);
+  position: relative;
+}
+
+.links ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0;
+  transition: var(--primary-transition);
+  height: 2px;
+  background-color: var(--primary-color);
+  display: block;
+}
+
+.links ul li:hover a, .links ul li:hover a:focus, .links ul li:hover a:visited, .links ul li:hover a:active {
+  color: var(--primary-color) !important;
+}
+
+.links ul li:hover a::after, .links ul li:hover a:focus::after, .links ul li:hover a:visited::after, .links ul li:hover a:active::after {
+  width: 100%;
+}

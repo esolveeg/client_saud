@@ -1,0 +1,120 @@
+footer {
+  background-color: #111;
+}
+
+footer .title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+footer .title::after {
+  content: "";
+  display: block;
+  width: 30px;
+  margin: 15px 0 30px;
+  background-color: var(--primary-color);
+  height: 2px;
+}
+
+footer .logo img {
+  width: 200px;
+}
+
+footer .right {
+  margin: 90px 0 40px;
+}
+
+footer .copyrights {
+  border-top: 1px solid #D7D7D7;
+  margin: 30px 0 0;
+  padding: 39px 0;
+  text-align: center;
+}
+
+footer .copyrights span {
+  font-size: 14px;
+}
+
+footer .about {
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.22);
+  background: #000;
+  padding: 48px 14px 32px;
+}
+
+footer .about p {
+  margin: 30px 0;
+  color: var(--font);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+footer .about ul {
+  padding-left: 0 !important;
+}
+
+footer .about ul li {
+  padding: 0 0 20px;
+  color: #fff;
+  font-size: 14px;
+}
+
+footer .about ul li i {
+  color: var(--primary-color);
+  margin-right: 1px;
+}
+
+footer .newsletter h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+footer .newsletter p {
+  color: var(--font);
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+footer .newsletter__form {
+  align-items: center;
+  display: flex;
+}
+
+footer .newsletter__form .input {
+  width: 70%;
+}
+
+footer .newsletter__form .btn {
+  width: 30%;
+  padding-left: 10px;
+}
+
+footer .list ul {
+  padding-left: 0 !important;
+}
+
+footer .list ul li {
+  padding: 0 0 20px;
+  font-size: 14px;
+  color: var(--font);
+  transition: var(--primary-transition);
+  cursor: pointer;
+}
+
+footer .list ul li:hover {
+  color: var(--primary-color);
+  transform: translateX(10px);
+}
+
+footer .list ul li:hover i {
+  color: var(--primary-color);
+}
+
+footer .list ul li i {
+  color: var(--primary-color);
+  margin-right: 12px;
+}
