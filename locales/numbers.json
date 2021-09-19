@@ -2,7 +2,7 @@
     "en" :{
         "currency" : {
             "style": "currency",
-            "currency": "EGP"
+            "currency": "SAR"
         },
         "showing" : {
             "style": "showing",
@@ -14,7 +14,7 @@
     "ar" :{
         "currency" : {
             "style": "currency",
-            "currency": "EGP",
+            "currency": "SAR",
             "currencyDisplay": "symbol"
         },
         "showing" : {
