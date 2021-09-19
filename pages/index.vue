@@ -25,7 +25,7 @@
               </div>
               <home-products productKey="latest"/>
             </v-col>
-             <v-col cols="6" v-for="banner in banners" :key="banner.id">
+             <v-col cols="12" v-for="banner in banners" :key="banner.id">
               <home-banner :loading="bannersLoading" :img="banner.image"/>
             </v-col>
             <v-col cols="12">

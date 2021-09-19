@@ -47,7 +47,7 @@ export default {
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color:var(--primary-color);
+    background-color:#000
   }
   .auth .v-main .v-card{
     margin:0 auto;

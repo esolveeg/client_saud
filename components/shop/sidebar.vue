@@ -45,7 +45,7 @@
         @click.prevent="filter(group)"
         link
       >
-        <v-icon>mdi-{{ group.icon }}</v-icon>
+        <!-- <v-icon>mdi-{{ group.icon }}</v-icon> -->
         <v-list-item-title
           v-text="group.GroupName"
           v-if="$i18n.locale === 'ar'"

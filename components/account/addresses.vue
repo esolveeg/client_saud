@@ -39,7 +39,7 @@
                         <v-text-field
                           v-model="form.BuildingNo"
                           :rules="rules.BuildingNo"
-                          label="Building"
+                          :label="$t('building_no')"
                           required
                         ></v-text-field>
                         <ul v-if="errors.BuildingNo && errors.BuildingNo.length > 0  ">
@@ -58,7 +58,7 @@
                         <v-text-field
                           v-model="form.RowNo"
                           :rules="rules.RowNo"
-                          label="RowNo"
+                          :label="$t('RowNo')"
                           required
                         ></v-text-field>
                         <ul v-if="errors.RowNo && errors.RowNo.length > 0  ">
@@ -77,7 +77,7 @@
                         <v-text-field
                           v-model="form.FlatNo"
                           :rules="rules.FlatNo"
-                          label="FlatNo"
+                            :label="$t('FlatNo')"
                           required
                         ></v-text-field>
                         <ul v-if="errors.FlatNo && errors.FlatNo.length > 0  ">
@@ -96,7 +96,7 @@
                         <v-text-field
                           v-model="form.Street"
                           :rules="rules.Street"
-                          label="Street"
+                            :label="$t('Street')"
                           required
                         ></v-text-field>
                         <ul v-if="errors.Street && errors.Street.length > 0  ">
@@ -115,7 +115,7 @@
                         <v-text-field
                           v-model="form.Remark"
                           :rules="rules.Remark"
-                          label="Remark"
+                            :label="$t('Remark')"
                           required
                         ></v-text-field>
                         <ul v-if="errors.Remark && errors.Remark.length > 0  ">
@@ -137,7 +137,7 @@
                           v-model="SectionNo"
                           item-value="id"
                           @change="getAreas"
-                          label="section"
+                            :label="$t('Section')"
                           ></v-select>
                       </div>
                     </v-list-item-content>
@@ -153,7 +153,7 @@
                           v-model="form.AreaNo"
                           item-text="AreaName"
                           item-value="id"
-                          label="area"
+                            :label="$t('AreaNo')"
                           ></v-select>
                           <ul v-if="errors.AreaNo && errors.AreaNo.length > 0  ">
                               <li class="error" v-for="(err , index) in errors.AreaNo" :key="index">
@@ -173,7 +173,7 @@
                             v-model="form.PhSerial"
                             item-text="phone"
                             item-value="id"
-                            label="phone"
+                            :label="$t('PhSerial')"
                             ></v-select>
                           <ul v-if="errors.PhSerial && errors.PhSerial.length > 0  ">
                                 <li class="error" v-for="(err , index) in errors.PhSerial" :key="index">
@@ -195,7 +195,7 @@
                       :loading="editLoading"
                       color="primary"
                     >
-                      <v-icon dark>
+                      <v-icon >
                         mdi-check
                       </v-icon>
                       {{$t('done')}}

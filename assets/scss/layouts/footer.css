@@ -86,6 +86,7 @@ footer .newsletter__form {
 
 footer .newsletter__form .input {
   width: 70%;
+  background-color: #000 !important;
 }
 
 footer .newsletter__form .btn {

@@ -55,8 +55,8 @@
     <v-col cols="12" class="sm-hidden mb-8">
       <v-container>
         
-    <v-tabs vertical>
-      <v-tab class="left" :class="$route.query == index ? 'v-tab--active' : ''"  v-for="(item,index) in items" @click.prevent="action(item.text , index)"  :key="index">
+    <v-tabs vertical class="acc-tabs">
+      <v-tab class="left text-black" :class="$route.query == index ? 'v-tab--active' : ''"  v-for="(item,index) in items" @click.prevent="action(item.text , index)"  :key="index">
         <v-icon left>
          {{item.icon}}
         </v-icon>
@@ -177,7 +177,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-gray-darken);
+  background-color: #000;
   flex-direction: column;
 }
 .left {
@@ -185,5 +185,9 @@ export default {
 }
 .title{
   color: var(--primary-color);
+}
+.acc-tabs{
+  background-color: #000;
+
 }
 </style>

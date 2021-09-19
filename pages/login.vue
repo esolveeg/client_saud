@@ -81,7 +81,7 @@
         password : [],
       },
       form : {
-        emailOrPhone : 'test@elnozom.com',
+        emailOrPhone : 'test@saud.com',
         password: '123456',
       },
       rules :{
@@ -109,7 +109,7 @@
             .then(()=>{
                 const snackbar = {
                     active : true,
-                    text: 'logged in successfully'
+                    text: 'logged_in'
                 }
                 this.$store.commit('ui/setSnackbar' , snackbar)
                 this.loading  = false
@@ -127,7 +127,7 @@
                 this.isLoading = false
 
             }).catch(e => {
-              this.err = e.response.data
+             console.log(e)
               this.loading  = false
 
             })  

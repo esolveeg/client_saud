@@ -22,20 +22,6 @@
             </v-badge>
         </v-btn>
         <layouts-mobile-search/>
-        <v-btn
-            icon
-            v-if="$i18n.locale == 'en'"
-            @click.prevent="switchLanguage"
-        >
-            <v-icon>mdi-abjad-arabic</v-icon>
-        </v-btn>
-        <v-btn
-            icon
-            v-else
-            @click.prevent="switchLanguage"
-        >
-            <v-icon large>mdi-alpha-e</v-icon>
-        </v-btn>
     </v-app-bar>
 </template>
 
@@ -56,16 +42,6 @@ export default {
         })
     },
     methods:{
-        switchLanguage(){
-            const locale = this.$i18n.locale === 'en' ? 'ar' : 'en'
-            if(locale == 'ar'){
-                this.$vuetify.rtl = true
-            } else {
-                this.$vuetify.rtl = false
-
-            }
-            this.$router.push({name : `index___${locale}`})
-        },
         search(){
             this.dialog = true
         }

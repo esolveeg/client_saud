@@ -102,27 +102,27 @@
         password : [],
       },
       form : {
-        email : 'test@test2.com',
+        email : 'test2@saud.com',
         phone : '0102205246',
         name : 'test name',
         password: '123456',
       },
       rules :{
         emailOrPhone : [
-            v => !!v || 'Email Or Phone Field is required',
+            v => !!v || 'البريد الالكتروني مطلوب',
             //  v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
           ],
         password:  [
-          v => !!v || 'Password is required',
+          v => !!v || 'الرقم السري مطلوب',
           // v => (v && v.length >= 6) || 'Password must be greater than or equal 6 characters',
         ],
         name:  [
-          v => !!v || 'Name is required',
+          v => !!v || 'الاسم مطلوب',
           // v => (v && v.length >= 6) || 'Password must be greater than or equal 6 characters',
         ],
         Phone:  [
-          v => !!v || 'Phone is required',
-          v => isNumric(v) || 'Phone must be number',
+          v => !!v || 'رقم الهاتف مطلوب',
+          v => isNumric(v) || 'رقم الهاتف لابد من ان يكون رقم',
           // v => (v && v.length >= 6) || 'Password must be greater than or equal 6 characters',
         ],
       }

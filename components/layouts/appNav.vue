@@ -74,16 +74,12 @@
                                     {{$t('Store')}}
                                 </a>
                             </li>
-                             <li>
-                                <a @click.prevent="setGroup({id: 1 , GroupName : 'رجالي' , GroupNameEn : 'men'})">
-                                    {{$t('Men')}}
+                             <li v-for="group in groups" :key="group.id">
+                                <a @click.prevent="setGroup(group)">
+                                    {{group.GroupName}}
                                 </a>
                             </li>
-                            <li>
-                                <a @click.prevent="setGroup({id: 2 , GroupName : 'نسائي' , GroupNameEn : 'women'})" >
-                                    {{$t('Women')}}
-                                </a>
-                            </li>
+                          
                         </ul>
                     </div>
                     <div class="search">
@@ -177,6 +173,7 @@ export default {
     computed:{
         ...mapGetters({
             count: 'cart/cartCount',
+              groups: 'group/groups',
             loading: 'product/loading',
             filtersParams: 'product/filtersParams',
             links : 'global/links',

@@ -34,7 +34,6 @@
                             <v-flex class="newsletter__form">
                                 <div class="input">
                                     <v-text-field
-                                        :label="$t('email')"
                                         rounded
                                         dense
                                         color="black"
@@ -63,7 +62,7 @@
                             <h2 class="title">{{$t('categories')}}</h2>
                             <ul>
                                 <li v-for="group in groups" :key="group.id">
-                                    <v-icon small>mdi-{{group.icon}}</v-icon>
+                                    <!-- <v-icon small>mdi-{{group.icon}}</v-icon> -->
                                     <a @click.prevent="setGroup(group)" v-if="$i18n.locale === 'ar'">
                                         {{group.GroupName}}
                                     </a>
